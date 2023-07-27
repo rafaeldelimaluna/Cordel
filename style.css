@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 6%;
+    text-align: center;
+    font-family: var(--fonte1);
+}
+
+h1 {
+    font-family: var(--fonte2);
+    font-size: 7em;
+    font-weight: bolder;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover,
+h1:hover {
+    text-decoration: underline;
+}
+
+section {
+    width: 50%;
+    font-family: var(--fonte2), var(--fonte3);
+    font-size: 3em;
+    margin: 1em;
+}
+
+footer {
+    font-family: var(--fonte1);
+    background-color: black;
+    color: white;
+    padding: 3em;
+    text-align: center;
+}
