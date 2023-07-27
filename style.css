@@ -1,48 +1,86 @@
-* {
-    margin: 0px;
-}
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
 
-:root {
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
-}
+ * {
+     margin: 0px;
+     padding: 0px;
+ }
 
-header {
-    background-color: black;
-    color: white;
-    padding: 6%;
-    text-align: center;
-    font-family: var(--fonte1);
-}
+ html,
+ body {
+     min-width: 100vw;
+ }
 
-h1 {
-    font-family: var(--fonte2);
-    font-size: 7em;
-    font-weight: bolder;
-}
+ :root {
+     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+     --fonte2: 'PT Sans Narrow', sans-serif;
+     --fonte3: 'Kalam', cursive;
+ }
 
-a {
-    color: white;
-    text-decoration: none;
-}
+ header {
+     background-color: black;
+     color: white;
+     padding: 6vw;
+     text-align: center;
+     font-family: var(--fonte1);
+     font-variant: small-caps;
+ }
 
-a:hover,
-h1:hover {
-    text-decoration: underline;
-}
+ h1 {
+     font-family: var(--fonte2);
+     font-size: 8vw;
+     font-weight: bolder;
+ }
 
-section {
-    width: 50%;
-    font-family: var(--fonte2), var(--fonte3);
-    font-size: 3em;
-    margin: 1em;
-}
+ a {
+     color: white;
+     text-decoration: none;
+ }
 
-footer {
-    font-family: var(--fonte1);
-    background-color: black;
-    color: white;
-    padding: 3em;
-    text-align: center;
-}
+ a:hover,
+ h1:hover {
+     text-decoration: underline;
+ }
+
+ main {
+     font-family: var(--fonte3);
+     font-size: 5vw;
+ }
+
+ section {
+     padding-left: 8vw;
+     padding-top: 10vw;
+     padding-bottom: 10vw;
+     line-height: 8vw;
+
+ }
+
+ section.imagem>p {
+     background-color: rgba(0, 0, 0, 0.521);
+     color: white;
+     text-shadow: 2px 2px 0px black;
+     display: inline-block;
+ }
+
+ section.imagem {
+     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.295);
+     background-size: cover;
+     background-attachment: fixed;
+ }
+
+ section#img01 {
+     background-image: url(imagens/background001.jpg);
+     background-position: right, center;
+ }
+
+ section#img02 {
+     background-image: url(imagens/background002.jpg);
+ }
+
+ footer {
+     font-family: var(--fonte1);
+     background-color: black;
+     color: white;
+     padding: 3em;
+     text-align: center;
+ }
